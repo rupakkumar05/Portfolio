@@ -1,5 +1,8 @@
 {
   "name": "react-portfoliyo",
+  "homepage": " https://rupakkumar05.github.io/Portfolio/",
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d build",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -12,6 +15,7 @@
   "dependencies": {
     "@fontsource/outfit": "^5.2.5",
     "@fontsource/roboto": "^5.2.5",
+    "gh-pages": "^6.3.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
