@@ -6,7 +6,7 @@ export const ProjectCard = ({ project }) => {
     <div className={styles.wrapper}>
       <div className={styles.container}>
         <img
-          src="../../assets/project/project1.png"
+          src={project.imageSrc}
           alt={project.title}
           className={styles.image}
         />
