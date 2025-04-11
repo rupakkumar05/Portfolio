@@ -12,7 +12,6 @@ export const Projects = () => {
   const project = {
     title: "Airbnb Clone",
     description: "Developed a full-stack Airbnb clone",
-    imageSrc: projectImages["../../assets/project/project1.png"],
     skills: [],
     sourceLink: "https://github.com/rupakkumar05/airnbn",
   };
