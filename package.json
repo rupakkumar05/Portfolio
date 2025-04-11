@@ -1,8 +1,6 @@
 {
   "name": "react-portfoliyo",
   "homepage": " https://rupakkumar05.github.io/Portfolio/",
-  "predeploy": "npm run build",
-  "deploy": "gh-pages -d build",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,7 +8,9 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
   },
   "dependencies": {
     "@fontsource/outfit": "^5.2.5",
