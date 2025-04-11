@@ -8,11 +8,18 @@ const skillImages = import.meta.glob("../../assets/skills/*.png", {
   import: "default",
 });
 
+// Import project (history) images dynamically (e.g., airbnb.jpg)
+const historyImages = import.meta.glob("../../assets/skills/*.{jpg,jpeg,webp}", {
+  eager: true,
+  import: "default",
+});
+
 export const Experience = () => {
   return (
     <section className={styles.container} id="expreience">
       <h2 className={styles.title}>Experience</h2>
       <div className={styles.content}>
+        {/* Skills Grid */}
         <div className={styles.skills}>
           {skills.map((skill, id) => {
             const imagePath = `../../assets/skills/${skill.imageSrc}`;
@@ -28,19 +35,21 @@ export const Experience = () => {
             );
           })}
         </div>
+
+        {/* Project History */}
         <ul className={styles.history}>
           <li className={styles.historyItem}>
             <img
-              src="./src/assets/skills/airbnb.jpg"
+              src={historyImages["../../assets/skills/airbnb.jpg"]}
               alt="Personal Project logo"
             />
             <div className={styles.historyItemDetails}>
-              <h3>Full Stack  Project</h3>
+              <h3>Full Stack Project</h3>
               <p>Jan, 2024 - Mar, 2024</p>
-              <ul style={{ listStyle: 'none', paddingLeft: 0, margin: 0 }}>
-                <li >
+              <ul style={{ listStyle: "none", paddingLeft: 0, margin: 0 }}>
+                <li>
                   Built a full-featured Airbnb clone using HTML, CSS,
-                  JavaScript, and Node.js
+                  JavaScript, and Node.js.
                 </li>
               </ul>
             </div>

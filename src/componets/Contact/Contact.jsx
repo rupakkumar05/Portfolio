@@ -1,6 +1,10 @@
 import React from "react";
-
 import styles from "./Contact.module.css";
+
+import emailIcon from "../../assets/contact/emailIcon.png";
+import linkedinIcon from "../../assets/contact/linkedinIcon.png";
+import githubIcon from "../../assets/contact/githubIcon.png";
+import resumeIcon from "../../assets/contact/RESUME.png"; // rename if needed
 
 export const Contact = () => {
   return (
@@ -11,23 +15,24 @@ export const Contact = () => {
       </div>
       <ul className={styles.links}>
         <li className={styles.link}>
-          <img src="./src/assets/contact/emailIcon.png" alt="Email icon" />
-          <a href="rupakkumar995554@gmail.com">rupakkumar995554@gmail.com</a>
+          <img src={emailIcon} alt="Email icon" />
+          <a href="mailto:rupakkumar995554@gmail.com">rupakkumar995554@gmail.com</a>
         </li>
         <li className={styles.link}>
-          <img
-            src="./src/assets/contact/linkedinIcon.png"
-            alt="LinkedIn icon"
-          />
-          <a href="https://www.linkedin.com/in/rupak-kumar-a989a0336?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">linkedin.com </a>
+          <img src={linkedinIcon} alt="LinkedIn icon" />
+          <a href="https://www.linkedin.com/in/rupak-kumar-a989a0336?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+            linkedin.com
+          </a>
         </li>
         <li className={styles.link}>
-          <img src="./src/assets/contact/githubIcon.png" alt="Github icon" />
-          <a href="https://github.com/rupakkumar05">github.com </a>
+          <img src={githubIcon} alt="GitHub icon" />
+          <a href="https://github.com/rupakkumar05">github.com</a>
         </li>
         <li className={styles.link}>
-        <img className={styles.resume} src="./src/assets/contact/RESUME.png" alt="Github icon" />
-          <a href="https://drive.google.com/file/d/1VxxHvGNNC_J4kK5RloOkg4m0n2Uybe8z/view?usp=sharing">Download Resume</a>
+          <img className={styles.resume} src={resumeIcon} alt="Resume" />
+          <a href="https://drive.google.com/file/d/1VxxHvGNNC_J4kK5RloOkg4m0n2Uybe8z/view?usp=sharing">
+            Download Resume
+          </a>
         </li>
       </ul>
     </footer>
