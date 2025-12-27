@@ -1,0 +1,38 @@
+@import "../../vars.css";
+
+.container {
+  margin-top: 76px;
+  color: var(--color-text);
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.title {
+  font-size: 35px;
+  font-weight: 700;
+  letter-spacing: 1.75px;
+  text-transform: uppercase;
+}
+
+/* Projects Grid */
+.projects {
+  margin-top: 37px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Desktop */
+  gap: 15px;
+  width: 100%;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .projects {
+    grid-template-columns: 1fr;
+  }
+}
